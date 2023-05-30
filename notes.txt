@@ -11,3 +11,10 @@ Writing Django Tests
     What does Django Provide for testing?
 
     Django provides a test framework with  a small hierachy of classes that build on the python standard unittest library.
+    You should test all aspects of youer code, but nnot any libraries or functionality provided as part of python or django.
+
+Core Concepts and Best Practices when writing django tests
+    a. Test Case Classes: The TestCase class is a base class for writing tests. It inherits from Python's `unittest.TestCase` and provides additional functionality specific to Django
+    b. Test Methods: Test Methods within a test case class are defined with names starting with `test_`. Each test method should focus on testing a specific aspect of your code.
+    c. Test Fixtures: These are pre-defined data or conditions that are set up before running a test and cleaned up afterward. Fixtures are provided through the `setup()` and `tearDown()` methods.
+    d. Assertions: 
