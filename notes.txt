@@ -1,0 +1,13 @@
+Writing Django Tests
+
+    Types of Tests
+
+    1. Unit Tests - Verify functional behaviour of individual componnts, often to class and funtional level
+    2. Regression tests - Tests that reproduce historic bugs. Each test initially run to verify that the bug has been fixed, and then re-run to verify that the bug has not been re-introduced following later changes to the code.
+    3. Integration tests - Verify how groupings of components work when used together. Integration tests are aware of the required interractions between components, but not necessarily of the internal operations
+                           of each component. They may cover simple groupings of components through to the whole website.
+    
+
+    What does Django Provide for testing?
+
+    Django provides a test framework with  a small hierachy of classes that build on the python standard unittest library.
