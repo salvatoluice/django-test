@@ -35,6 +35,7 @@ from django.conf.urls.static import static
 
 # urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+# Simper way to write the above code
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('catalog/', include('catalog.urls')),
